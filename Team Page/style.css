@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #344966;
+    color: white;
+    padding: 20px;
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.member {
+    background: white;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 500px;
+    height: 150px
+}
+
+.member h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    margin-top: 30px;
+    vertical-align: middle;
+    line-height: 30px;
+}
+
+.member p {
+    color: #555;
+}
