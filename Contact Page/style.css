@@ -5,6 +5,25 @@ body {
     margin: 0;
     padding: 0;
 }
+.header {
+    background: linear-gradient(to right, #1a2a38, #2c5282);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+    animation: fadeInDown 1s ease-in-out;
+}
+.header h1 {
+    font-size: 40px;
+    margin: 0;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    opacity: 0.8;
+}
 header {
     background-color: #1a232c;
     color: white;
@@ -12,33 +31,7 @@ header {
     text-align: center;
     font-size: 28px;
 }
-nav {
-    background-color: #2e3d50;
-    padding: 10px 0;
-    text-align: center;
-}
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-nav ul li {
-    display: inline;
-}
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    font-size: 18px;
-    transition: 0.3s;
-}
-nav ul li a:hover {
-    background-color: #405673;
-    border-radius: 5px;
-}
+
 .hero {
     background: linear-gradient(to right, #2e3d50, #1a232c);
     color: white;
