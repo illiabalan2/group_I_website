@@ -9,7 +9,6 @@ body {
 }
 .header {
     background: linear-gradient(to right, #1a2a38, #2c5282);
-    
     color: white;
     padding: 40px 20px;
     text-align: center;
@@ -17,7 +16,7 @@ body {
     animation: fadeInDown 1s ease-in-out;
 }
 .header h1 {
-    font-size: 2.5em;
+    font-size: 40px;
     margin: 0;
     font-weight: bold;
     letter-spacing: 1px;
