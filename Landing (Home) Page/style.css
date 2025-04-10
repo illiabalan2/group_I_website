@@ -65,7 +65,7 @@ body {
 
 /* Navbar */
 .navbar {
-    background-color: #0f172a; /* Darker than header */
+    background: linear-gradient(to right, #1a2a38, #0f172a);
     padding: 15px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }

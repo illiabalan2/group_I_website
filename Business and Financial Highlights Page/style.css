@@ -6,6 +6,10 @@ body {
     padding: 0;
 }
 
+.content {
+  animation: fadeInUp 1s ease-in-out forwards;
+}
+
 .header {
     font-family: Arial, sans-serif;
     background: #2e3d50;
@@ -14,6 +18,7 @@ body {
     padding: 40px 20px;
     text-align: center;
     position: relative;
+    animation: fadeInDown 1s ease-in-out;
 }
 
 .header h1 {
@@ -132,4 +137,26 @@ footer {
 .nav-links a:hover::after,
 .nav-links a.active::after {
   width: 100%;
+}
+
+@keyframes fadeInDown {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(30px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
 }

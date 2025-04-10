@@ -97,6 +97,14 @@ ul {
 .nav-links a.active::after {
     width: 100%;
 }
+
+footer {
+    background-color: #1a232c;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
 @keyframes fadeInDown {
     from {
         opacity: 0;
