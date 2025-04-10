@@ -7,24 +7,51 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="market.html">Market</a></li>
+            <li><a href="financials.html">Financials</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <div class="header">
         <h1>Welcome to Adaptive Lights</h1>
-        <p>Our Idea is AI-powered streetlights that use LED lights dynamically to adjust brightness based on human/vehicular presence. Each streetlight has an inbuilt camera with an AI model that can accurately detect and track humans/vehicles while ignoring other types of movement e.g. birds or foxes on streets. When a person or vehicle passes by, the light slightly brightens and follows them by skewing on its vertical axis. If more people are present, the brightness increases accordingly. However, in large crowds, the lights remain stationary and only brighten to reduce unnecessary light pollution in the area. Light Pollution is a growing issue in more urban areas and can affect quality of health drastically. The AI would be configurable to specific needs, whether that be to be tuned to react to cars, humans or cyclists. The AI also does not store or transmit any footage and only processes the data.
-        </p>
         <p>Smart lighting solutions that adapt to your environment, enhancing efficiency and comfort.</p>
-        
-        <div class="features">
-            <h2>Key Features</h2>
-            <ul>
-                <li>Automatic brightness adjustment based on surroundings</li>
-                <li>Energy-efficient lighting to reduce electricity costs</li>
-                <li>Smart controls for seamless customization</li>
-                <li>Enhances safety and visibility in various settings</li>
-            </ul>
-        </div>
-        
-        <div class="cta">
-            <button onclick="alert('Thank you for your interest! More details coming soon.')">Learn More</button>
-        </div>
     </div>
+
+    <!-- General Description Section -->
+    <section class="content">
+        <p>
+            Our idea is AI-powered streetlights that dynamically adjust their brightness based on human or vehicular presence. Using energy-efficient LEDs, each light is equipped with an embedded camera and AI model capable of detecting and tracking people and vehicles in real time, while ignoring irrelevant motion like birds or stray animals.
+        </p>
+        <p>
+            When movement is detected, the light slightly brightens and smoothly tilts along its vertical axis to follow the subject. In higher foot or vehicle traffic, brightness increases to enhance visibility. However, in the presence of larger crowds, the lights remain stationary and simply brighten to reduce disorientation and minimize unnecessary light pollution.
+        </p>
+        <p>
+            This system helps cities reduce energy consumption, improve public safety, and tackle the growing issue of light pollution. It also offers configurable detection settings, enabling municipalities to fine-tune sensitivity toward pedestrians, vehicles, or cyclists depending on local needs.
+        </p>
+        <p>
+            Importantly, all AI processing is done locally on the device—no data is stored or transmitted—ensuring full privacy and compliance with data protection regulations. Adaptive Lights represent the future of sustainable, intelligent urban infrastructure.
+        </p>
+
+        <!-- Key Features -->
+        <h2>Key Features</h2>
+        <ul>
+            <li>Real-time detection of humans, vehicles, or cyclists with AI-powered tracking</li>
+            <li>Dynamic brightness adjustment based on presence and activity</li>
+            <li>Tilting mechanism to follow individual movement when appropriate</li>
+            <li>Energy-efficient LED lighting with significant cost savings</li>
+            <li>Reduces light pollution and improves quality of life in urban areas</li>
+            <li>Fully local processing with zero data storage or transmission</li>
+            <li>Customizable detection modes for different city environments</li>
+            <li>Supports safer, smarter, and more sustainable streets</li>
+        </ul>
+    </section>
 </body>
+</html>

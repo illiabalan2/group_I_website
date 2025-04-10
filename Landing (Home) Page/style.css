@@ -1,40 +1,224 @@
+/* General Styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #490ea8;
+    text-align: center;
+    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
-    text-align: center;
 }
-.container {
+
+/* Content Section (flow layout) */
+.content {
     max-width: 800px;
-    margin: 50px auto;
+    margin: 40px auto;
     padding: 20px;
-    background-color: #ffffff;
+    background: white;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-h1 {
-    color: navy;
-}
-p {
-    color: gray;
-}
-.features {
+    animation: fadeInUp 1s ease-in-out forwards;
+    opacity: 0;
     text-align: left;
-    margin-top: 20px;
 }
+
+.content p {
+    color: #555;
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.content h2 {
+    margin-top: 30px;
+    color: #1a2a38;
+}
+
+.content ul {
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+.content ul li {
+    margin: 10px 0;
+    color: #555;
+}
+
+/* Call to Action Button */
 .cta {
-    margin-top: 20px;
+    text-align: center;
 }
+
 .cta button {
-    background-color: lightblue;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
+    background-color: #2c5282;
     color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
 }
+
 .cta button:hover {
-    background-color: navy;
+    background-color: #1a2a38;
+}
+
+
+/* Navbar */
+.navbar {
+    background-color: #0f172a; /* Darker than header */
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #ffdd57;
+}
+
+.nav-links a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #ffdd57;
+    transition: width 0.3s;
+    margin: auto;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+    width: 100%;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(to right, #1a2a38, #2c5282);
+    color: white;
+    animation: fadeInDown 1s ease-in-out;
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.header h1 {
+    font-size: 40px;
+    margin: 0;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
+/* Team/Content Section */
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    transform: translateY(30px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    animation: fadeInUp 1s ease-in-out forwards;
+}
+
+.member {
+    background: white;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 500px;
+    min-height: 150px;
+    transition: box-shadow 0.3s ease;
+}
+
+.member:hover {
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Typography and Content Styling */
+.member h2 {
+    font-size: 1.4em;
+    margin: 10px 0;
+    color: #1a2a38;
+}
+
+.member p {
+    color: #555;
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+ul {
+    padding-left: 20px;
+    text-align: left;
+}
+
+ul li {
+    margin: 8px 0;
+}
+
+/* Call to Action Button */
+button {
+    background-color: #2c5282;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1a2a38;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
