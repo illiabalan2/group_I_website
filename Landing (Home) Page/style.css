@@ -184,6 +184,14 @@ ul li {
     margin: 8px 0;
 }
 
+footer {
+    background-color: #1a232c;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
 /* Call to Action Button */
 button {
     background-color: #2c5282;

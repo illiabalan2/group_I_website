@@ -1,57 +1,144 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #fcfdfe;
-    color: #0D1B1E; 
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(to right, #1a2a38, #0f172a);
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
     margin: 0;
     padding: 0;
 }
 
-header {
+.nav-links li {
+    margin: 0 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #ffdd57;
+}
+
+.nav-links a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #ffdd57;
+    transition: width 0.3s;
+    margin: auto;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+    width: 100%;
+}
+
+/* Header */
+.header {
     background: linear-gradient(to right, #1a2a38, #2c5282);
     color: white;
+    animation: fadeInDown 1s ease-in-out;
     padding: 40px 20px;
     text-align: center;
     position: relative;
-    animation: fadeInDown 1s ease-in-out;
 }
-header h1 {
+
+.header h1 {
     font-size: 40px;
     margin: 0;
     font-weight: bold;
     letter-spacing: 1px;
 }
-header p {
+
+.header p {
     font-size: 1.2em;
     margin-top: 10px;
     opacity: 0.8;
 }
 
-h2 {
-    color: #2c5282;
-}
-section {
-    background-color: f2f3f3; 
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin: 20px;
+/* Section Content */
+.content {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
     border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    animation: fadeInUp 1s ease-in-out forwards;
+    opacity: 0;
 }
 
-ul {
-    list-style-type: square;
+.content h2 {
+    color: #1a2a38;
+    margin-bottom: 15px;
+}
+
+.content p {
+    color: #555;
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.content ul {
     padding-left: 20px;
+    margin-top: 10px;
+    color: #283C4B;
 }
 
-li {
-    color: #283C4B;
+.content ul li {
     margin-bottom: 10px;
 }
 
-strong {
-    color: #7aa95d; 
+/* Footer */
+footer {
+    background-color: #1a232c;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
 }
 
-p {
-    color: #283C4B;
-    line-height: 1.6;
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
