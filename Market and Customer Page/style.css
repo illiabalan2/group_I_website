@@ -6,13 +6,24 @@ body {
     padding: 0;
 }
 
-header {
-    background-color: #08193e; 
-    color: rgb(243, 242, 242);
+.header {
+    background: linear-gradient(to right, #1a2a38, #2c5282);
+    color: white;
+    padding: 40px 20px;
     text-align: center;
-    padding: 20px;
+    position: relative;
+    animation: fadeInDown 1s ease-in-out;
 }
- h1 {color:#6291b4
+.header h1 {
+    font-size: 40px;
+    margin: 0;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    opacity: 0.8;
 }
 
  h2 {
